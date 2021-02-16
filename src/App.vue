@@ -1,45 +1,27 @@
 <template>
     <div id="app">
-
+        <h1>Router</h1>
+        <Header/>
+        <router-view/>
     </div>
 </template>
 
 <script>
 
 
+  import Header from "@/components/Header";
   export default {
     name: 'App',
-
+    components: {Header},
     data() {
-      return {
-
-      }
+      return {}
     },
     computed: {},
-    methods: {
-
-    }
+    methods: {}
 
   }
 </script>
 
 <style>
-    #app {
-        font-family: Avenir, Helvetica, Arial, sans-serif;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        text-align: center;
-        color: #2c3e50;
-        margin-top: 60px;
-    }
-
-    .red {
-        background-color: red;
-    }
-
-    .green {
-        background-color: green;
-    }
-
 
 </style>
