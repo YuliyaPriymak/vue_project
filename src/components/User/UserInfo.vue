@@ -4,7 +4,7 @@
     <p>User ID:{{ $route.params.id }}</p>
     <router-link
         tag="button"
-        :to="'/user/'+$route.params.id+'/edit/'"
+        :to="{name: 'UserEdit', params: {id: $route.params.id}, query: {item: 10, page: 1}}"
     >Edit user
     </router-link>
   </div>
@@ -19,3 +19,4 @@ export default {
 <style scoped>
 
 </style>
+<!--:to="'/user/'+$route.params.id+'/edit/'"-->
