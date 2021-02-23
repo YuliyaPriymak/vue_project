@@ -1,13 +1,19 @@
 <template>
-<div>
+  <div>
     <h1>Some user info</h1>
-</div>
+    <p>User ID:{{ $route.params.id }}</p>
+    <router-link
+        tag="button"
+        :to="'/user/'+$route.params.id+'/edit/'"
+    >Edit user
+    </router-link>
+  </div>
 </template>
 
 <script>
-  export default {
-    name: "UserInfo"
-  }
+export default {
+  name: "UserInfo"
+}
 </script>
 
 <style scoped>
